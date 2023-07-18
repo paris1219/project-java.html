@@ -1,0 +1,696 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <link rel="stylesheet" href="C:\Users\Kiran\Desktop\webtec\project\code\index.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>index</title>
+    </head>
+    <style>
+        html {
+    scroll-behavior:smooth;
+}
+
+* {
+    margin: 0;
+}
+p{
+    position: absolute;
+    left: 50px;
+}
+.main{
+    height: 900px;
+    width:900px;
+}
+
+.head {
+    height: 70px;
+    width: 90%;
+    box-shadow:2px 2px 5px 2px;
+    background-color:white;
+    display: flex;
+    align-items: center;
+    position: fixed;
+    top: 30px;
+    left:50px;
+    z-index: 1000;
+    backdrop-filter: blur(5px);
+
+}
+
+.head img {
+    width: 5.2%;
+}
+.head ul {
+    width: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    list-style-type: none;
+    position: absolute;
+    left: 60px;
+}
+
+.head ul:hover a {
+    color: black;
+}
+
+.head a {
+    text-decoration: none;
+    font-size: 25px;
+    color: black;
+}
+
+.head li:hover a {
+    color: darkorange;
+}
+.material-symbols-outlined{
+    position:absolute;
+    top:0;
+    left:400px
+}
+.material-symbols-outlined:hover{
+    transform: rotate(10deg);
+    transition: all .5s ease-out;
+}
+.he9{
+    height: 5vh;
+    width: 30%;
+    background-color:white;
+    position: absolute;
+    top: 4px;
+    right:0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/* h1{ 
+    font-size: 50px;
+    font-weight:4000px;
+    position: absolute;
+    background-image: url("https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExc3lodncwOTZ2aTVpZHJyaHlwNHlzajhwd2U4bzhzaDgwNzRnNTY2OCZlcD12MV9naWZzX3NlYXJjaCZjdD1n/BDucPOizdZ5AI/giphy.gif");
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-position-x: -50px;
+    top: 0;
+    left: 450px;
+} */
+.he9 a{
+    display: inline;
+    margin: 10px;
+    color:black;
+}
+.he9 a:hover{
+   
+}
+ 
+
+.ttd{
+    height: 40px;
+    width: 200px;
+    border-top-right-radius: 30px;
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    left: 850px;
+    top:0;
+    background-color: orangered;
+}
+h1{
+    font-size: 60px;
+    position: relative;
+    top:130px;
+    left:50px;
+}
+.pd{
+    font-size: 24px;
+    position: relative;
+    top:200px;
+    left:50px;
+}
+.dim{
+    background-color:rgb(253, 100, 72);
+    height:400px;
+    width: 430px;
+    border-top-left-radius:500px;
+    border-top-right-radius:950px;
+    border-bottom-left-radius:1100px;
+    border-bottom-right-radius:600px;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    position:absolute;
+    top:150px;
+    left: 800px;
+    animation: Move infinite 1s alternate-reverse ease-in-out;
+}
+@keyframes Move{
+    from{
+        top:140px;
+    }
+    to{
+        bottom: 500px;
+    }
+}
+.dim img{
+    position:sticky;
+    top:150px;
+    left: 820px;
+}
+/* .nwa1{
+    position:sticky;
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    flex-wrap: wrap;
+}
+.carousel {
+    margin-left: 50px;
+    height: 70px;
+    width: 100%;
+}
+
+.carousel img {
+    margin: 300px 0px 0px 0px;
+    height: 70px;
+    width: 40px;
+} */
+.ttd1{
+    height: 40px;
+    width: 180px;
+    border-top-right-radius: 30px;
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    background-color:blueviolet;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    left:50px;
+    top:500px;
+}
+.ttd2{
+    height: 40px;
+    width: 250px;
+    border-top-right-radius: 30px;
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position:absolute;
+    left: 250px;
+    top:500px;
+    background-color: orangered;
+}
+.ttd1:hover{
+    height: 50px;
+    width:200px;
+}
+.ttd2:hover{
+    height: 50px;
+    width:270px; 
+}
+.ptd{
+    height: 300px;
+    width: 500px;
+    position:absolute;
+    top: 650px;
+    left: 50px;
+}
+.ptd h4{
+    font-size: 30px;
+}
+.sign{
+    height: 280px;
+    width: 500px;
+    box-shadow: 2px 2px 2px 2px black;
+    position: absolute;
+    left: 700px;
+    top:650px;
+}
+table{
+    position: absolute;
+    top: 30px;
+    left: 20px;
+    margin-top: 20px;
+}
+.td1{
+    position: absolute;
+    left:120px ;
+}
+.td2{
+    position: absolute;
+    top:40px ;
+    width:150px;
+}
+.ttd3{
+    height: 30px;
+    width: 350px;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius:10px;
+    border-bottom-right-radius:10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position:absolute;
+    left: 100px;
+    top:120px;
+    background-color:slateblue;
+}
+.sign p{
+    position: absolute;
+    top:150px ;
+}
+.lab{
+    position: absolute;
+    top: 210px;
+}
+.he8{
+    position: absolute;
+    top: 210px;
+    left: 50px;
+}
+.sign:hover{
+    position: absolute;
+    top: 610px;
+    height:300px ;
+    width: 500px;
+    box-shadow: 5px 5px 5px 5px;
+}
+.phn2{
+    font-size: 30px;
+    position: absolute;
+    left: 50px;
+    top: 950px;
+}
+.phn2:hover{
+    position: absolute;
+    left:60px ;
+}
+.he7{
+    height: 40px;
+    width: 200px;
+    display: flex;
+    align-items: center;
+    justify-content:space-evenly;
+    position: absolute;
+    right: 50px;
+    top: 950px;
+}
+html {
+    scroll-behavior:smooth;
+}
+
+* {
+    margin: 0;
+}
+p{
+    position: absolute;
+    left: 50px;
+}
+.main{
+    height: 900px;
+    width:900px;
+}
+
+.head {
+    height: 70px;
+    width: 90%;
+    box-shadow:2px 2px 5px 2px;
+    background-color:white;
+    display: flex;
+    align-items: center;
+    position: fixed;
+    top: 30px;
+    left:50px;
+    z-index: 1000;
+    backdrop-filter: blur(5px);
+
+}
+
+.head img {
+    width: 5.2%;
+}
+.head ul {
+    width: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    list-style-type: none;
+    position: absolute;
+    left: 60px;
+}
+
+.head ul:hover a {
+    color: black;
+}
+
+.head a {
+    text-decoration: none;
+    font-size: 25px;
+    color: black;
+}
+
+.head li:hover a {
+    color: darkorange;
+}
+.material-symbols-outlined{
+    position:absolute;
+    top:0;
+    left:400px
+}
+.material-symbols-outlined:hover{
+    transform: rotate(10deg);
+    transition: all .5s ease-out;
+}
+.he9{
+    height: 5vh;
+    width: 30%;
+    background-color:white;
+    position: absolute;
+    top: 4px;
+    right:0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/* h1{ 
+    font-size: 50px;
+    font-weight:4000px;
+    position: absolute;
+    background-image: url("https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExc3lodncwOTZ2aTVpZHJyaHlwNHlzajhwd2U4bzhzaDgwNzRnNTY2OCZlcD12MV9naWZzX3NlYXJjaCZjdD1n/BDucPOizdZ5AI/giphy.gif");
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-position-x: -50px;
+    top: 0;
+    left: 450px;
+} */
+.he9 a{
+    display: inline;
+    margin: 10px;
+    color:black;
+}
+.he9 a:hover{
+   
+   
+}
+.ttd{
+    height: 40px;
+    width: 200px;
+    border-top-right-radius: 30px;
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    left: 850px;
+    top:0;
+    background-color: orangered;
+}
+h1{
+    font-size: 60px;
+    position: relative;
+    top:130px;
+    left:50px;
+}
+.pd{
+    font-size: 24px;
+    position: relative;
+    top:200px;
+    left:50px;
+}
+.dim{
+    background-color:rgb(253, 100, 72);
+    height:400px;
+    width: 430px;
+    border-top-left-radius:500px;
+    border-top-right-radius:950px;
+    border-bottom-left-radius:1100px;
+    border-bottom-right-radius:600px;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    position:absolute;
+    top:150px;
+    left: 800px;
+    animation: Move infinite 1s alternate-reverse ease-in-out;
+}
+@keyframes Move{
+    from{
+        top:140px;
+    }
+    to{
+        bottom: 500px;
+    }
+}
+.dim img{
+    position:sticky;
+    top:150px;
+    left: 820px;
+}
+/* .nwa1{
+    position:sticky;
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    flex-wrap: wrap;
+}
+.carousel {
+    margin-left: 50px;
+    height: 70px;
+    width: 100%;
+}
+
+.carousel img {
+    margin: 300px 0px 0px 0px;
+    height: 70px;
+    width: 40px;
+} */
+.ttd1{
+    height: 40px;
+    width: 180px;
+    border-top-right-radius: 30px;
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    background-color:blueviolet;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    left:50px;
+    top:500px;
+}
+.ttd2{
+    height: 40px;
+    width: 250px;
+    border-top-right-radius: 30px;
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position:absolute;
+    left: 250px;
+    top:500px;
+    background-color: orangered;
+}
+.ttd1:hover{
+    height: 50px;
+    width:200px;
+}
+.ttd2:hover{
+    height: 50px;
+    width:270px; 
+}
+.ptd{
+    height: 300px;
+    width: 500px;
+    position:absolute;
+    top: 650px;
+    left: 50px;
+}
+.ptd h4{
+    font-size: 30px;
+}
+.sign{
+    height: 280px;
+    width: 500px;
+    box-shadow: 2px 2px 2px 2px black;
+    position: absolute;
+    left: 700px;
+    top:650px;
+}
+table{
+    position: absolute;
+    top: 30px;
+    left: 20px;
+    margin-top: 20px;
+}
+.td1{
+    position: absolute;
+    left:120px ;
+}
+.td2{
+    position: absolute;
+    top:40px ;
+    width:150px;
+}
+.ttd3{
+    height: 30px;
+    width: 350px;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius:10px;
+    border-bottom-right-radius:10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position:absolute;
+    left: 100px;
+    top:120px;
+    background-color:slateblue;
+}
+.sign p{
+    position: absolute;
+    top:150px ;
+}
+.lab{
+    position: absolute;
+    top: 210px;
+}
+.he8{
+    position: absolute;
+    top: 210px;
+    left: 50px;
+}
+.sign:hover{
+    position: absolute;
+    top: 610px;
+    height:300px ;
+    width: 500px;
+    box-shadow: 5px 5px 5px 5px;
+}
+.phn2{
+    font-size: 30px;
+    position: absolute;
+    left: 50px;
+    top: 950px;
+}
+.phn2:hover{
+    position: absolute;
+    left:60px ;
+}
+.he7{
+    height: 40px;
+    width: 200px;
+    display: flex;
+    align-items: center;
+    justify-content:space-evenly;
+    position: absolute;
+    right: 50px;
+    top: 950px;
+}
+        .material-symbols-outlined {
+        font-variation-settings:
+        'FILL' 0,
+        'wght' 400,
+        'GRAD' 0,
+        'opsz' 48
+        }
+        </style>
+    <body>
+        <div class="main">
+        <p>Free Markating Packages For non-propit Organization </p>
+           <a href=""> <span class="material-symbols-outlined">
+                arrow_forward_ios
+                </span></a>
+                <div class="he9">
+                    <p>follow us on</p>
+                    <a href="https://api.whatsapp.com/send?phone=6362778088" target="_blank"><i class="fa fa-whatsapp" style="font-size:18px;"></i>
+                    </a>
+                    <a href="https://www.instagram.com/"><i class="fa fa-instagram"style="font-size:18px;"></i></a>
+                    <a href="https://www.facebook.com/"><i class="fa fa-facebook-f"style="font-size:18px;"></i></a>
+                </div>
+        <header class="head">
+            <img src="https://brandcurb.com/assets/brandcurb-logo.webp" alt="">
+            <ul>
+            <li><a href="#home">Brand</a></li>
+            <li><a href="#recent">SEO</a></li>
+            <li><a href="#top">Branding</a></li>
+            <li><a href="#up">PPC</a></li>
+            <li><a href="#lg1">About Us</a></li>
+            <li><a href="#about">Blog</a></li>
+            <li><a href="#about">Contact Us</a></li>
+            <li><a href=""><span class="material-symbols-outlined" style="position: absolute;left: 650px;">
+                search
+                </span></a></li>
+            <li><a href=""><span class="material-symbols-outlined" style="position: absolute;left: 750px;">
+                shopping_bag
+                </span></a></li>
+            <li><div class="ttd" style="color: white;">Book a free consultation</div></li>
+            </ul>
+        </header>
+        <h1 class="mb-32 pix-sliding-headline-2 font-weight-bold secondary-font pix-waiting pix-animate pix-sliding-text animated" data-anim-type="pix-sliding-text" pix-anim-delay="500" data-class="secondary-font text-dark-opacity-8"><span class="slide-in-container "><span class="pix-sliding-item secondary-font text-dark-opacity-8" style="transition-delay: 0ms;">Complete </span></span> <span class="slide-in-container "><span class="pix-sliding-item secondary-font text-dark-opacity-8" style="transition-delay: 150ms;">Web </span></span> <span class="slide-in-container "><span class="pix-sliding-item secondary-font text-dark-opacity-8" style="transition-delay: 300ms;">Design <br> </span></span> <span class="slide-in-container "><span class="pix-sliding-item secondary-font text-dark-opacity-8" style="transition-delay: 450ms;">&amp; </span></span> <span class="slide-in-container "><span class="pix-sliding-item secondary-font text-dark-opacity-8" style="transition-delay: 600ms;">Development </span></span></h1>
+        <p class="pd">Say goodbye to sleepless nights over counterproductive <br>communications between service providers, and no more overbilling- <br>related nightmares for services you’re not sure you need but you’re sure <br> you have to pay for.</p>
+        <div class="dim" ><img src="https://brandcurb.com/assets/web-design-development.webp" alt="" style="height: 400px;width: 400px;"></div>
+        <div class="ttd1" style="color: white;">View Pricing</div>
+        <div class="ttd2" style="color: white;">&phone; Book a Free consultation</div>
+        <div class="ptd">
+            <p><h4>Website Design & Development</h4>
+                We offer comprehensive web design and development services that are tailored to meet the unique needs of your business. Our team of experienced designers and developers work closely with you to create a website that not only looks great but also functions seamlessly. We focus on creating a user-friendly experience for your visitors, ensuring that your website is easy to navigate and optimized for conversions.At BrandCurb, we take a collaborative approach to every project, ensuring that we fully understand your business and your goals before we begin. Whether you're looking to launch a new website or redesign an existing one, we are here to help you achieve your online objectives. Contact us today to learn more about our web design and development services and how we can help your business succeed online
+            </p>
+        </div>
+        <div class="sign">
+            <table>
+                <tr>
+                    <td><label for=""><strong>Package</strong></label></td>
+                    <td class="td1"> <select name="" id="">
+                        <option value="" hidden>Choose an option</option>
+                        <option value="">Essential</option>
+                        <option value="">Premium</option>
+                        <option value="">Altimate</option>
+                    </select></td>
+                    <hr>
+                </tr>
+                <tr>
+                <td class="td2"><button>SIGN UP NOW</button></td>
+                </tr>
+            </table>
+        <div class="ttd3" style="color: white;">HAVE A QESTION ABOUT OUR PRICING?</div>
+        <p>We'll help you choose the package that's right for your business and answer any questions you may have. Don't wait, schedule your consultation now</p>
+        <label for="" class="lab">Search:</label>
+        <div class="he8">
+            <a href="https://api.whatsapp.com/send?phone=6362778088" target="_blank"><i class="fa fa-whatsapp" style="font-size:18px;color: black;"></i>
+            </a>
+            <a href="https://www.instagram.com/"><i class="fa fa-instagram"style="font-size:18px;color: black;"></i></a>
+            <a href="https://www.facebook.com/"><i class="fa fa-facebook-f"style="font-size:18px;color: black;"></i></a>
+        </div>
+        </div>
+        <p class="phn2">&phone; Book a Free consultation</p>
+        <a href=""> <span class="material-symbols-outlined">
+             arrow_forward_ios
+             </span></a>
+             <div class="he7">
+                 <a href="https://api.whatsapp.com/send?phone=6362778088" target="_blank"><i class="fa fa-whatsapp" style="font-size:18px;"></i>
+                 </a>
+                 <a href="https://www.instagram.com/"><i class="fa fa-instagram"style="font-size:18px;"></i></a>
+                 <a href="https://www.facebook.com/"><i class="fa fa-facebook-f"style="font-size:18px;"></i></a>
+             </div>
+    </div>
+</body>
+</html>
